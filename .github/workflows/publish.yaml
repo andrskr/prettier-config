@@ -11,6 +11,7 @@ jobs:
 
   publish-npm:
     name: 🚢 Publish to NPM
+    needs: run-checks
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -43,6 +44,7 @@ jobs:
 
   publish-github:
     name: 🚢 Publish to GPR
+    needs: run-checks
     runs-on: ubuntu-latest
     permissions:
       contents: read
