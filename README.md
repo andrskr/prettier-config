@@ -9,7 +9,7 @@ You might like them - or you might not. Don't worry; you can always change them 
 Install the package using `pnpm` (or `npm`, or `yarn`):
 
 ```sh
-  pnpm add -D @andskre/prettier-config
+pnpm add -D @andskre/prettier-config
 ```
 Add the `prettier` key to your `package.json`
 
