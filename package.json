@@ -1,5 +1,5 @@
 {
-  "name": "@andskre/prettier-config",
+  "name": "@andrskr/prettier-config",
   "version": "0.0.0",
   "description": "Personal Prettier configuration",
   "author": {
@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/andskre/prettier-config.git"
+    "url": "https://github.com/andrskr/prettier-config.git"
   },
   "files": [
     "index.js"
