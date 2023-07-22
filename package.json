@@ -6,7 +6,8 @@
     "name": "Andrii Skrebets",
     "email": "andriiskrebets@gmail.com"
   },
-  "main": "index.js",
+  "type": "module",
+  "exports": "./index.js",
   "scripts": {
     "test": "prettier --config ./index.js --check ./index.js examples/",
     "test:fix": "prettier --config ./index.js --write examples/",
