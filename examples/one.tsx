@@ -11,6 +11,16 @@ import type { Config } from 'prettier';
  *   }
  */
 
+declare function cx(...input: string[]): void;
+declare function cva(...input: (string | { variants: Record<string, string> })[]): void;
+
+cx('mb-3 flex items-center justify-center p-4');
+cva('mb-3 flex items-center justify-center p-4', {
+  variants: {
+    base: 'mb-3 flex items-center justify-center p-4',
+  },
+});
+
 function HelloWorld({ greeting = 'hello', greeted = '"World"', silent = false, onMouseOver }) {
   if (!greeting) {
     return null;
