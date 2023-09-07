@@ -1,8 +1,7 @@
-/** @typedef {import('@ianvs/prettier-plugin-sort-imports').PluginConfig} SortImportsConfig */
 /** @typedef {import('prettier').Config} PrettierConfig */
 /** @typedef {{ tailwindConfig: string }} TailwindConfig */
 
-/** @type {PrettierConfig | SortImportsConfig | TailwindConfig} */
+/** @type {PrettierConfig | TailwindConfig} */
 const config = {
   arrowParens: 'always',
   bracketSpacing: true,
@@ -19,24 +18,8 @@ const config = {
   trailingComma: 'all',
   useTabs: false,
   endOfLine: 'auto',
-  plugins: [
-    '@ianvs/prettier-plugin-sort-imports',
-    'prettier-plugin-jsdoc',
-    'prettier-plugin-tailwindcss',
-  ],
+  plugins: ['prettier-plugin-jsdoc', 'prettier-plugin-tailwindcss'],
   tailwindFunctions: ['cx', 'cva'],
-  importOrderTypeScriptVersion: '4.4.0',
-  importOrder: [
-    '^(react/(.*)$)|^(react$)',
-    '',
-    '<THIRD_PARTY_MODULES>',
-    '',
-    '^~/lib/(.*)$',
-    '^~/components/(.*)$',
-    '^~/(.*)$',
-    '',
-    '^[./]',
-  ],
 };
 
 export default config;
